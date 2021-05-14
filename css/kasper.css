@@ -781,11 +781,11 @@ header .container nav .form i {
 
   transform: translateX(-50%);
 }
-.pricing .plans .plan .footer {
+.pricing .plans .plan .foot {
   padding: 35px;
   border-top: 1px solid var(--main-color);
 }
-.pricing .plans .plan .footer a {
+.pricing .plans .plan .foot a {
   text-decoration: none;
   padding: 10px;
   background-color: var(--main-color);
@@ -807,3 +807,164 @@ header .container nav .form i {
 }
 
 /* end pricing section */
+/* start subscribe section */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url("../imgs/subscribe.jpg");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.subscribe::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.subscribe .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .subscribe .container {
+    flex-direction: column;
+  }
+}
+.subscribe .container form {
+  display: flex;
+  position: relative;
+}
+.subscribe .container form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+}
+.subscribe .container form input[type="email"] {
+  padding: 20px 20px 20px 50px;
+  background: none;
+  border: 1px solid #fcfcfc;
+  border-right: none;
+  color: #fff;
+  caret-color: var(--main-color);
+}
+.subscribe .container form input[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fcfcfc;
+  border-left: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.subscribe .container form input[type="email"]:focus,
+.subscribe .container form input[type="submit"]:focus {
+  outline: none;
+}
+.subscribe .container p {
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .subscribe .container p {
+    margin-top: 40px;
+  }
+}
+
+/* end subscribe section */
+/* start contact section */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 727px) {
+  .contact .content {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+.contact .content form .contact-fields {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.contact .content form .contact-fields:focus {
+  outline: none;
+}
+.contact .content form textarea.contact-fields {
+  height: 220px;
+}
+.contact .content .info-contact {
+  flex-basis: 25%;
+}
+@media (max-width: 727px) {
+  .contact .content .info-contact {
+    margin-top: 30px;
+  }
+}
+
+.contact .content .info-contact h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.contact .content .info-contact h3:nth-of-type(2) {
+  margin-top: 40px;
+}
+.contact .content .info-contact span {
+  line-height: 1.6;
+  color: #777;
+  display: block;
+}
+.contact .content .info-contact address {
+  line-height: 1.6;
+  color: #777;
+}
+.footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  background-image: url("../imgs/statistique.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.footer .container {
+  text-align: center;
+}
+.footer .container img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 40px;
+}
+.footer .container p:not(.copyright) {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.footer .container .socials i {
+  padding: 10px;
+}
+.footer .container .copyright {
+  margin-top: 30px;
+}
+.footer .container .copyright span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+/* end contact section */
